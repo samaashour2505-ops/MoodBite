@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MoodBite | Your Mood. Your Food.</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <span>🍴</span> MoodBite
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#moods">Moods</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button id="themeBtn" class="icon-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button id="cartBtn" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                <i class="fa-solid fa-sparkles"></i>
+                FOOD THAT MATCHES YOU
+            </p>
+
+            <h1>
+                Your Mood.
+                <span>Your Food.</span>
+                Your Perfect Bite.
+            </h1>
+
+            <p class="hero-text">
+                Tell us how you're feeling and we'll find the perfect meal
+                to match your mood.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#moods" class="primary-btn">
+                    Find My Meal
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <button class="surprise-btn" id="surpriseBtn">
+                    <i class="fa-solid fa-dice"></i>
+                    Surprise Me
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="image-circle"></div>
+
+            <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80"
+                alt="Healthy Food">
+
+            <div class="floating-card card-one">
+                <span>🔥</span>
+                <div>
+                    <strong>Trending</strong>
+                    <small>Chicken Bowl</small>
+                </div>
+            </div>
+
+            <div class="floating-card card-two">
+                <span>⭐</span>
+                <div>
+                    <strong>4.9</strong>
+                    <small>Customer Rating</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MOODS ================= -->
+
+    <section class="moods-section" id="moods">
+
+        <div class="section-title">
+
+            <p>DISCOVER YOUR TASTE</p>
+
+            <h2>
+                How are you
+                <span>feeling today?</span>
+            </h2>
+
+            <p class="section-description">
+                Choose your mood and let MoodBite do the rest.
+            </p>
+
+        </div>
+
+
+        <div class="mood-container">
+
+            <button class="mood-card" data-mood="happy">
+                <div class="mood-icon">😊</div>
+                <h3>Happy</h3>
+                <p>Something fun & delicious</p>
+            </button>
+
+            <button class="mood-card" data-mood="tired">
+                <div class="mood-icon">😴</div>
+                <h3>Tired</h3>
+                <p>Comfort food to relax</p>
+            </button>
+
+            <button class="mood-card" data-mood="sad">
+                <div class="mood-icon">🥺</div>
+                <h3>Sad</h3>
+                <p>A little food therapy</p>
+            </button>
+
+            <button class="mood-card" data-mood="energetic">
+                <div class="mood-icon">🔥</div>
+                <h3>Energetic</h3>
+                <p>Fuel your energy</p>
+            </button>
+
+            <button class="mood-card" data-mood="relaxed">
+                <div class="mood-icon">😌</div>
+                <h3>Relaxed</h3>
+                <p>Slow down & enjoy</p>
+            </button>
+
+            <button class="mood-card" data-mood="special">
+                <div class="mood-icon">😍</div>
+                <h3>Special</h3>
+                <p>Treat yourself today</p>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RECOMMENDATION ================= -->
+
+    <section class="recommendation" id="recommendation">
+
+        <div class="recommendation-content">
+
+            <div>
+                <p class="recommendation-label">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    YOUR PERSONAL RECOMMENDATION
+                </p>
+
+                <h2 id="recommendationTitle">
+                    Pick a mood to discover your meal
+                </h2>
+
+                <p id="recommendationText">
+                    We'll suggest delicious meals based on how you're feeling.
+                </p>
+            </div>
+
+            <div class="recommendation-icon" id="recommendationIcon">
+                🍽️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section" id="menu">
+
+        <div class="section-title">
+
+            <p>EXPLORE OUR MENU</p>
+
+            <h2>
+                Delicious meals,
+                <span>made for you.</span>
+            </h2>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="menu-tools">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for food..."
+                >
+
+            </div>
+
+
+            <div class="categories">
+
+                <button class="category-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-btn" data-category="pizza">
+                    Pizza
+                </button>
+
+                <button class="category-btn" data-category="burger">
+                    Burger
+                </button>
+
+                <button class="category-btn" data-category="pasta">
+                    Pasta
+                </button>
+
+                <button class="category-btn" data-category="healthy">
+                    Healthy
+                </button>
+
+                <button class="category-btn" data-category="dessert">
+                    Desserts
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOD CARDS -->
+
+        <div class="food-grid" id="foodGrid"></div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80"
+                alt="Food">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="section-label">
+                WHY MOODBITE?
+            </p>
+
+            <h2>
+                Food should match
+                <span>how you feel.</span>
+            </h2>
+
+            <p>
+                We believe choosing food should be more than just scrolling
+                through endless menus.
+            </p>
+
+            <p>
+                MoodBite connects your mood with delicious food choices,
+                helping you discover meals that fit your moment.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Made with Love</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Smart Suggestions</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Fast & Simple</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Cart
+                <span>🛒</span>
+            </h2>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+
+                <div>🛒</div>
+
+                <h3>Your cart is empty</h3>
+
+                <p>Add something delicious!</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="total">
+
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= FOOD MODAL ================= -->
+
+    <div class="modal-overlay" id="foodModal">
+
+        <div class="food-modal">
+
+            <button class="close-modal" id="closeModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <img id="modalImage" src="" alt="Food">
+
+            <div class="modal-content">
+
+                <span id="modalCategory">
+                    Category
+                </span>
+
+                <h2 id="modalName">
+                    Food Name
+                </h2>
+
+                <p id="modalDescription">
+                    Description
+                </p>
+
+                <div class="modal-info">
+
+                    <span>
+                        🔥 <b id="modalCalories">0</b> cal
+                    </span>
+
+                    <span>
+                        ⭐ <b id="modalRating">0</b>
+                    </span>
+
+                </div>
+
+                <div class="modal-bottom">
+
+                    <strong id="modalPrice">
+                        $0
+                    </strong>
+
+                    <button id="modalAddBtn">
+                        Add to Cart
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🍴 MoodBite
+        </div>
+
+        <p>
+            Your mood deserves the perfect meal.
+        </p>
+
+        <div class="socials">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 MoodBite. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
